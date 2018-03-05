@@ -60,25 +60,13 @@ table {
   box-sizing: border-box;
 }
 
-/*html{
-	font-size: 62.5%;
-}*/
 
-html { font-size: 62.5%; }  /* =10px */
-
-body {
-	 font-size: 1.4rem;
-	 font-size: 14px;
-
- } /* =14px */
-
-h1   { font-size: 2.4rem; } /* =24px */
 
 body{
-	/*line-height: 1.4rem;*/
-	/*font-size: 1.4rem; */
 	font-family: "raleway", sans-serif;
 	margin: 0;
+	font-size: 14px;
+	line-height: 1.6em;
 }
 
 
