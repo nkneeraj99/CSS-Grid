@@ -114,6 +114,16 @@ body{
 	background-color: var(--red);
 }
 
+.button.is-yellow{
+	--yellow: #F7CA18;
+	background-color: var(--yellow);
+}
+
+.button.is-primary{
+	--primary: #ABB7B7;
+	background-color: var(--primary);
+}
+
 .input{
 	border-radius: 3px;
     padding: 5px;
