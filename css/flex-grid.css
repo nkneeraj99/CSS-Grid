@@ -15,8 +15,16 @@
 	--base-color: #565a5c;
 }
 
+@font-face{
+	font-family: "Raleway";
+	src: url("../fonts/Raleway-Regular.ttf")
+}
+
 body{
 	overflow-x: hidden;
+	line-height: 1.5;
+	color: #565a5c;
+	font-family: "Raleway", sans-serif;
 }
 
 
@@ -33,12 +41,109 @@ body{
 	}
 }
 
-.box-row{
-	display: flex;
-}
 
 .box{
 	flex: 1;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+.box.box-25{
+	flex: none;
+	width: 25%;
+}
+
+.box.box-50{
+	flex: none;
+	width: 50%;
+}
+
+.box.box-75{
+	flex: none;
+	width: 75%;
+}
+
+
+.box-row{
+	--box-display: flex;
+	display: var(--box-display);
+}
+
+
+@media (max-width: 768px){
+	.box-row{
+		--box-display: block;
+	}
+}
+
+.container > * + * {
+	margin-top: 20px;
+}
+
+/*Buttons*/
+
+.button{
+    padding: 5px 20px;
+    background-color: #BDC3C7;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: all .4s ease;
+    font-size: 16px;
+    border-radius: 5px;
+    min-width: 150px;
+    min-height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+
+.button.is-green{
+	--green: #26A65B;
+	background-color: var(--green);
+}
+
+.button.is-blue{
+	--blue: #22A7F0;
+	background-color: var(--blue);
+}
+
+.button.is-red{
+	--red: #DC3023;
+	background-color: var(--red);
+}
+
+.input{
+	border-radius: 3px;
+    padding: 5px;
+    border: 1px solid #dbd9d9;
+    display: block;
+    margin: 5px;
+    width: 100%;
+    height: 35px;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+	border-radius: 3px;
+    padding: 5px;
+    border: 1px solid #dbd9d9;
+    display: block;
+    margin: 5px;
+    width: 100%;
+    height: 35px;
+}
+
+input[type="radio"]{
+	height: 15px;
+	cursor: pointer;
+	vertical-align: baseline;
+}
+
+.label{
+	cursor: pointer;
+    display: inline-block;
+    line-height: 1.25;
+    position: relative;
 }
