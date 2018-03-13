@@ -77,6 +77,14 @@ body{
 	font-family: "Raleway", sans-serif;
 }
 
+p{
+	margin: 10px 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 .container{
 	width: 100%;
@@ -266,10 +274,75 @@ textarea{
     padding: 0.625em;
     resize: vertical;
     border: 1px solid #dbd9d9;
-
 }
 
 textarea:not([rows]) {
     max-height: 600px;
     min-height: 120px;
+}
+
+/*Card*/
+
+.card{
+	background-color: #fff;
+	max-width: 100%;
+	overflow: hidden;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin: 10px;
+}
+
+.card .card-img{
+	max-width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.card .card-img img{
+	width: 100%;
+    display: block;
+}
+
+.card .card-content{
+	padding: 20px;
+}
+
+.card .card-content h3{
+	font-size: 1.9em;
+	font-weight: 600;
+}
+
+.dialog{
+    background-color: #fff;
+    max-width: 100%;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.dialog-text{
+    padding: 20px;
+}
+
+.dialog-btn{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-btn button{
+	width: 50%;
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dialog-btn button:hover{
+	background-color: #fff;
 }
