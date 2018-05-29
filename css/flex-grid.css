@@ -1,5 +1,5 @@
-/*Added ResetCSS For Refrence*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/*Added ResetCSS For Reference*/
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -69,7 +69,7 @@ table {
 	--border: 1px solid #eee;
 	--xlg-screen: 1600px;
 	--padding-10: 10px;
-	--green: #26A65B; 
+	--green: #26A65B;
 	--blue: #22A7F0;
 	--red: #DC3023;
 	--yellow: #F7CA18;
@@ -166,14 +166,49 @@ blockquote{
 	padding-right: 10px;
 }
 
+.box.box-20{
+    flex: var(--flex-none);
+    width: 20%;
+}
+
 .box.box-25{
 	flex: var(--flex-none);
 	width: 25%;
 }
 
+.box.box-30{
+    flex: var(--flex-none);
+    width: 30%;
+}
+
+.box.box-35{
+    flex: var(--flex-none);
+    width: 35%;
+}
+
+.box.box-40{
+    flex: var(--flex-none);
+    width: 40%;
+}
+
 .box.box-50{
 	flex: var(--flex-none);
 	width: 50%;
+}
+
+.box.box-60{
+    flex: var(--flex-none);
+    width: 60%;
+}
+
+.box.box-65{
+    flex: var(--flex-none);
+    width: 65%;
+}
+
+.box.box-70{
+    flex: var(--flex-none);
+    width: 70%;
 }
 
 .box.box-75{
@@ -193,8 +228,15 @@ blockquote{
 		--box-display: block;
 	}
 
+	.box.box-20,
 	.box.box-25,
+	.box.box-30,
+	.box.box-35,
+	.box.box-40,
 	.box.box-50,
+	.box.box-60,
+	.box.box-65,
+	.box.box-70,
 	.box.box-75{
 		width: 50%;
 	}
@@ -205,8 +247,15 @@ blockquote{
 		--box-display: block;
 	}
 
-	.box.box-25,
-	.box.box-50,
+    .box.box-20,
+    .box.box-25,
+    .box.box-30,
+    .box.box-35,
+    .box.box-40,
+    .box.box-50,
+    .box.box-60,
+    .box.box-65,
+    .box.box-70,
 	.box.box-75{
 		width: 100%;
 	}
@@ -558,7 +607,7 @@ textarea:not([rows]) {
 .navbar ul:last-child .dropdown .dropdown-menu{
     position: absolute;
     left: 0;
-    visibility: hidden; 
+    visibility: hidden;
 	background: #fff;
     min-width: 150px;
     max-width: 100%;
@@ -589,3 +638,30 @@ textarea:not([rows]) {
 .navbar ul:last-child .dropdown:hover .dropdown-menu{
 	visibility: visible;
 }
+
+/*Helper Classes*/
+.text-center{
+	text-align: center;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
