@@ -161,9 +161,10 @@ blockquote{
 
 
 .box{
-	flex: 1;
 	padding-left: 10px;
 	padding-right: 10px;
+	flex-grow: 1;
+	width: 25%
 }
 
 .box.box-20{
@@ -220,12 +221,17 @@ blockquote{
 .box-row{
 	--box-display: flex;
 	display: var(--box-display);
+	flex-wrap: wrap;
 }
 
 
 @media (max-width: 768px){
 	.box-row{
 		--box-display: block;
+	}
+
+	.box{
+		width: 100%
 	}
 
 	.box.box-20,
